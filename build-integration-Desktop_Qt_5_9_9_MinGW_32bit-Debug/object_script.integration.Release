@@ -1,0 +1,15 @@
+INPUT(
+./release\alerte.o
+./release\arduino.o
+./release\connexion.o
+./release\employe.o
+./release\formations.o
+./release\login.o
+./release\main.o
+./release\mainwindow.o
+./release\matriels.o
+./release\smtp.o
+./release\moc_alerte.o
+./release\moc_mainwindow.o
+./release\moc_smtp.o
+);

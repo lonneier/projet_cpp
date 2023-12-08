@@ -1,0 +1,15 @@
+INPUT(
+./debug\alerte.o
+./debug\arduino.o
+./debug\connexion.o
+./debug\employe.o
+./debug\formations.o
+./debug\login.o
+./debug\main.o
+./debug\mainwindow.o
+./debug\matriels.o
+./debug\smtp.o
+./debug\moc_alerte.o
+./debug\moc_mainwindow.o
+./debug\moc_smtp.o
+);
