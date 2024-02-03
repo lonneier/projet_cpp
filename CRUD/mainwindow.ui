@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1267</width>
+    <height>692</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #FFFFFF; /* Main window background color similar to Windows */
+}
+
+QMenuBar {
+    background-color: #0078D4; /* Menu bar background color similar to Windows */
+    color: #FFFFFF; /* Menu bar text color */
+}
+
+QMenuBar::item {
+    background-color: #0078D4; /* Menu item background color */
+    color: #FFFFFF; /* Menu item text color */
+}
+
+QMenuBar::item:selected {
+    background-color: #00559B; /* Selected menu item background color */
+    color: #FFFFFF; /* Selected menu item text color */
+}
+
+QToolBar {
+    background-color: #F2F2F2; /* Tool bar background color similar to Windows */
+}
+
+QStatusBar {
+    background-color: #E5E5E5; /* Status bar background color similar to Windows */
+    color: #000000; /* Status bar text color */
+}
+
+QDockWidget {
+    background-color: #E5E5E5; /* Dock widget background color similar to Windows */
+}
+
+QTabWidget {
+    background-color: #FFFFFF; /* Tab widget background color similar to Windows */
+}
+
+QTabWidget::pane {
+    border: 1px solid #C0C0C0; /* Tab widget pane border */
+}
+
+QTabBar::tab {
+    background-color: #E0E0E0; /* Tab background color */
+}
+
+QTabBar::tab:selected {
+    background-color: #FFFFFF; /* Selected tab background color */
+}
+
+QTabWidget QToolButton {
+    background-color: #E5E5E5; /* Tool button background color */
+    color: #000000; /* Tool button text color */
+}
+
+QTabWidget QToolButton::pressed {
+    background-color: #0078D4; /* Pressed tool button background color */
+    color: #FFFFFF; /* Pressed tool button text color */
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>851</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>2</number>
+       </property>
+       <widget class="QWidget" name="page">
+        <widget class="QTableView" name="tableView">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>851</width>
+           <height>531</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView {
+    background-color: #FFFFFF; /* Background color similar to Windows */
+    border: 1px solid #C0C0C0; /* Border color */
+    selection-background-color: #0078D4; /* Selection background color similar to Windows */
+    selection-color: #FFFFFF; /* Selection text color similar to Windows */
+}
+
+QHeaderView::section {
+    background-color: #0078D4; /* Header section background color similar to Windows */
+    color: #FFFFFF; /* Header section text color similar to Windows */
+    padding: 5px; /* Padding around header sections */
+}</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <widget class="QFrame" name="horizontalFrame">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>851</width>
+           <height>531</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_3">
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>321</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3"/>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>DS</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>DC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>DIRIGEANT</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>ADRESSE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>CP</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>PAYS</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>GOUVERNORAT</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>VILLE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>TELEPHONE</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLineEdit" name="DSLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="DCLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="DIRLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ADRESSELE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="CPLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="PAYSLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="GVTLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="VILLELE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="TLPHLE"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>420</y>
+           <width>311</width>
+           <height>76</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QPushButton" name="bout_ajout">
+              <property name="text">
+               <string>Ajouter</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>ID</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="IDLE"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>30</y>
+           <width>391</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6"/>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>FAX</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>EMAIL</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>SECTEUR</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>SOUS-SECTEUR</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>DIVISION</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>CAPITAL</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>CHIFFRE D'AFFAIRES</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>EFFECTIF</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>SITEWEB</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QLineEdit" name="FAXLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="EMAILLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="SECTLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="SSECTLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="DIVLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="CAPLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="CHAFFLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="EFFLE"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="SITELE"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_4">
+        <widget class="QWidget" name="horizontalLayoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>321</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_9"/>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>DS</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_24">
+              <property name="text">
+               <string>DC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_25">
+              <property name="text">
+               <string>DIRIGEANT</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_26">
+              <property name="text">
+               <string>ADRESSE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_27">
+              <property name="text">
+               <string>CP</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_28">
+              <property name="text">
+               <string>PAYS</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_29">
+              <property name="text">
+               <string>GOUVERNORAT</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_30">
+              <property name="text">
+               <string>VILLE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string>TELEPHONE</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="QLineEdit" name="DSLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="DCLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="DIRLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ADRESSELE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="CPLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="PAYSLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="GVTLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="VILLELE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="TLPHLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>30</y>
+           <width>391</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_12"/>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_13">
+            <item>
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string>FAX</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_33">
+              <property name="text">
+               <string>EMAIL</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_34">
+              <property name="text">
+               <string>SECTEUR</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_35">
+              <property name="text">
+               <string>SOUS-SECTEUR</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_36">
+              <property name="text">
+               <string>DIVISION</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_37">
+              <property name="text">
+               <string>CAPITAL</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_38">
+              <property name="text">
+               <string>CHIFFRE D'AFFAIRES</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_39">
+              <property name="text">
+               <string>EFFECTIF</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_40">
+              <property name="text">
+               <string>SITEWEB</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_14">
+            <item>
+             <widget class="QLineEdit" name="FAXLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="EMAILLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="SECTLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="SSECTLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="DIVLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="CAPLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="CHAFFLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="EFFLE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="SITELE_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_6">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>420</y>
+           <width>311</width>
+           <height>80</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="text">
+             <string>Supprimer</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>ID</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="s1"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_5">
+        <widget class="QTableView" name="tableView_AN">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>851</width>
+           <height>531</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView {
+    background-color: #FFFFFF; /* Background color similar to Windows */
+    border: 1px solid #C0C0C0; /* Border color */
+    selection-background-color: #0078D4; /* Selection background color similar to Windows */
+    selection-color: #FFFFFF; /* Selection text color similar to Windows */
+}
+
+QHeaderView::section {
+    background-color: #0078D4; /* Header section background color similar to Windows */
+    color: #FFFFFF; /* Header section text color similar to Windows */
+    padding: 5px; /* Padding around header sections */
+}</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_6">
+        <widget class="QTableView" name="tableView_DATA">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>581</width>
+           <height>521</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView {
+    background-color: #FFFFFF; /* Background color similar to Windows */
+    border: 1px solid #C0C0C0; /* Border color */
+    selection-background-color: #0078D4; /* Selection background color similar to Windows */
+    selection-color: #FFFFFF; /* Selection text color similar to Windows */
+}
+
+QHeaderView::section {
+    background-color: #0078D4; /* Header section background color similar to Windows */
+    color: #FFFFFF; /* Header section text color similar to Windows */
+    padding: 5px; /* Padding around header sections */
+}</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>160</y>
+           <width>191</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <item>
+           <widget class="QPushButton" name="IMPORT">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+            </property>
+            <property name="text">
+             <string>IMPORT </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="EXPORT">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+            </property>
+            <property name="text">
+             <string>EXPORT</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ERASE">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+            </property>
+            <property name="text">
+             <string>ERASE</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="ID_DATA"/>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="fitler">
+         <property name="text">
+          <string>FILTER</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>22</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>NONE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DS ASC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DS DESC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CAPITAL ASC</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CAPITAL DESC</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>60</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="recherche">
+         <property name="text">
+          <string>RECHERCHE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="RECHERCHE"/>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Minimum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>12</width>
+         <height>22</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+         </property>
+         <property name="text">
+          <string>LOAD</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+         </property>
+         <property name="text">
+          <string>MODIFY</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+         </property>
+         <property name="text">
+          <string>AJOUTER</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+         </property>
+         <property name="text">
+          <string>SUPPRIMER</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>1038</x>
+      <y>10</y>
+      <width>191</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="contextMenuPolicy">
+        <enum>Qt::ActionsContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+       </property>
+       <property name="text">
+        <string>ANOMALIES</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+       </property>
+       <property name="text">
+        <string>STATS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="PDF_BUT">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+       </property>
+       <property name="text">
+        <string>CREATE PDF</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+       </property>
+       <property name="text">
+        <string>CREATE EXCEL</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="DATA_ENT">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+       </property>
+       <property name="text">
+        <string>DATA ENTREPRISE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1267</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAUDITHUB">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionANOMALIES"/>
+    <addaction name="actionSTATS"/>
+    <addaction name="separator"/>
+    <addaction name="actionCREATE_PDF"/>
+    <addaction name="actionCREATE_EXCEL"/>
+   </widget>
+   <addaction name="menuAUDITHUB"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionANOMALIES">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>ANOMALIES</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionSTATS">
+   <property name="text">
+    <string>STATS</string>
+   </property>
+  </action>
+  <action name="actionCREATE_PDF">
+   <property name="text">
+    <string>CREATE PDF</string>
+   </property>
+  </action>
+  <action name="actionCREATE_EXCEL">
+   <property name="text">
+    <string>CREATE EXCEL</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>DSLE</tabstop>
+  <tabstop>DCLE</tabstop>
+  <tabstop>ADRESSELE</tabstop>
+  <tabstop>DIRLE</tabstop>
+  <tabstop>CPLE</tabstop>
+  <tabstop>PAYSLE</tabstop>
+  <tabstop>GVTLE</tabstop>
+  <tabstop>VILLELE</tabstop>
+  <tabstop>TLPHLE</tabstop>
+  <tabstop>bout_ajout</tabstop>
+  <tabstop>IDLE</tabstop>
+  <tabstop>FAXLE</tabstop>
+  <tabstop>EMAILLE</tabstop>
+  <tabstop>SECTLE</tabstop>
+  <tabstop>SSECTLE</tabstop>
+  <tabstop>DIVLE</tabstop>
+  <tabstop>CAPLE</tabstop>
+  <tabstop>CHAFFLE</tabstop>
+  <tabstop>EFFLE</tabstop>
+  <tabstop>SITELE</tabstop>
+  <tabstop>DSLE_2</tabstop>
+  <tabstop>DCLE_2</tabstop>
+  <tabstop>DIRLE_2</tabstop>
+  <tabstop>ADRESSELE_2</tabstop>
+  <tabstop>CPLE_2</tabstop>
+  <tabstop>PAYSLE_2</tabstop>
+  <tabstop>GVTLE_2</tabstop>
+  <tabstop>VILLELE_2</tabstop>
+  <tabstop>TLPHLE_2</tabstop>
+  <tabstop>FAXLE_2</tabstop>
+  <tabstop>EMAILLE_2</tabstop>
+  <tabstop>SECTLE_2</tabstop>
+  <tabstop>SSECTLE_2</tabstop>
+  <tabstop>DIVLE_2</tabstop>
+  <tabstop>CAPLE_2</tabstop>
+  <tabstop>CHAFFLE_2</tabstop>
+  <tabstop>EFFLE_2</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>SITELE_2</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>s1</tabstop>
+  <tabstop>tableView_AN</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>PDF_BUT</tabstop>
+  <tabstop>pushButton_5</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
