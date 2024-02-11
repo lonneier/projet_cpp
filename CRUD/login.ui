@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LOGIN</class>
+ <widget class="QWidget" name="LOGIN">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>485</width>
+    <height>485</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>485</width>
+    <height>485</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #FFFFFF; /* Main window background color similar to Windows */
+}
+QgroupBox {
+    background-color: #00002F; /* Main window background color similar to Windows */
+}
+QMenuBar {
+    background-color: #0078D4; /* Menu bar background color similar to Windows */
+    color: #FFFFFF; /* Menu bar text color */
+}
+
+QMenuBar::item {
+    background-color: #0078D4; /* Menu item background color */
+    color: #FFFFFF; /* Menu item text color */
+}
+
+QMenuBar::item:selected {
+    background-color: #00559B; /* Selected menu item background color */
+    color: #FFFFFF; /* Selected menu item text color */
+}
+
+QToolBar {
+    background-color: #F2F2F2; /* Tool bar background color similar to Windows */
+}
+
+QStatusBar {
+    background-color: #E5E5E5; /* Status bar background color similar to Windows */
+    color: #000000; /* Status bar text color */
+}
+
+QDockWidget {
+    background-color: #E5E5E5; /* Dock widget background color similar to Windows */
+}
+
+QTabWidget {
+    background-color: #FFFFFF; /* Tab widget background color similar to Windows */
+}
+
+QTabWidget::pane {
+    border: 1px solid #C0C0C0; /* Tab widget pane border */
+}
+
+QTabBar::tab {
+    background-color: #E0E0E0; /* Tab background color */
+}
+
+QTabBar::tab:selected {
+    background-color: #FFFFFF; /* Selected tab background color */
+}
+
+QTabWidget QToolButton {
+    background-color: #E5E5E5; /* Tool button background color */
+    color: #000000; /* Tool button text color */
+}
+
+QTabWidget QToolButton::pressed {
+    background-color: #0078D4; /* Pressed tool button background color */
+    color: #FFFFFF; /* Pressed tool button text color */
+}</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>250</y>
+     <width>271</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QgroupBox {
+    background-color: #00002F; /* Main window background color similar to Windows */
+}</string>
+   </property>
+   <property name="title">
+    <string>ACCESS</string>
+   </property>
+   <widget class="QPushButton" name="login_but">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>100</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #0078D4; /* Button background color similar to Windows */
+    color: #FFFFFF; /* Button text color */
+    border: 1px solid #0078D4; /* Button border color */
+    border-radius: 4px; /* Button border radius */
+    padding: 6px 12px; /* Button padding */
+}
+
+QPushButton:hover {
+    background-color: #00559B; /* Hovered button background color */
+    border: 1px solid #00559B; /* Hovered button border color */
+}
+
+QPushButton:pressed {
+    background-color: #003C75; /* Pressed button background color */
+    border: 1px solid #003C75; /* Pressed button border color */
+}
+
+QPushButton:focus {
+    border: 1px solid #0078D4; /* Focused button border color */
+    outline: none; /* Remove the focus outline */
+}</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>249</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Username</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="USRLE">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Password</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="PWDLE">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="pic">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>271</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pic_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>360</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>pic_2</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>pic</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

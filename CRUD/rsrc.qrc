@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/logo_app.png</file>
+        <file>img/logo_ministre.png</file>
+        <file>img/apprentissage-en-ligne.png</file>
+        <file>img/batiment.png</file>
+        <file>img/bloquer.png</file>
+        <file>img/comptage-4.png</file>
+        <file>img/dispositifs.png</file>
+        <file>img/document.png</file>
+        <file>img/employe.png</file>
+        <file>img/maison.png</file>
+        <file>img/partir.png</file>
+        <file>img/utilisateur.png</file>
+        <file>img/utilisateurs-alt (2).png</file>
+        <file>img/logo_team-removebg-preview.png</file>
+        <file>img/Flag_of_Tunisia.svg.png</file>
+        <file>img/Social Media.png</file>
+        <file>img/equipement.png</file>
+        <file>img/icons8-tools-50.png</file>
+        <file>img/icons8-tools-100.png</file>
+    </qresource>
+</RCC>
